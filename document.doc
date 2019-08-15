@@ -1,0 +1,45 @@
+API Details:
+--------------------------------------------------
+1. Creating a shorten URL
+   End Point : http://127.0.0.1:8000/visitor/post_shorten_url
+   Method : POST
+   Headers : content-Type: Application/json
+   Body : {
+	"shorten_url" : "facebook.com",
+	"url_name":"https://facebook.com"
+	}
+2. Listing shorten URL's:
+   End Point : http://127.0.0.1:8000/visitor/get_shorten_url
+   Method : GET
+   Headers : content-Type: Application/json
+   result : 
+        [
+    {
+        "shorten_url": "google.com",
+        "url_name": "https://google.com"
+    },
+    {
+        "shorten_url": "facebook.com",
+        "url_name": "https://facebook.com"
+    },
+    {
+        "shorten_url": "gmail.com",
+        "url_name": "https://gmail.com"
+    },
+    {
+        "shorten_url": "onedelta.in",
+        "url_name": "https://onedelta.in"
+    },
+    {
+        "shorten_url": "wipro.com",
+        "url_name": "https://wipro.com"
+    }
+      ]
+
+3. Web aplication:
+    3.1 Creating a shorten URL
+        End Point : http://127.0.0.1:8000/visitor/create_shorten_url
+    3.2 Listing shorten URL's
+        End Point : http://127.0.0.1:8000/visitor/list_shorten_url
+    3.3  Home Page:
+        End Point : http://127.0.0.1:8000/visitor/index

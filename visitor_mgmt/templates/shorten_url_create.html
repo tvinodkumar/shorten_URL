@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shorten URL's Register</title>
+</head>
+<body bgcolor="cyan">
+    <form action="./insert_shorten_url" method="post">
+        {% csrf_token %}
+        Shorten URL: <input type="text" name="shorten_url"><br>
+        URL_Name: <input type="text" name="url_name"><br>
+            <input type="submit" name="save_shorten_url">
+    </form>
+</body>
+</html>

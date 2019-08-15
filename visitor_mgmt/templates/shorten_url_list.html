@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee list</title>
+</head>
+<body bgcolor="cyan">
+<form method="get">
+    <center><h2>Shorten URL's Details</h2></center><br><br>
+    <!-- <right><input type="submit" name="New Employee" value="New Employee"></right> -->
+    <a href="create_shorten_url" name="new_shorten_url">New Shorten URL</a>
+    <table border="1" align="center">
+        <tr>
+            <td>Shorten_URL</td>
+            <td>URL_Name</td>
+        </tr>
+        {% for url in shorten_url_list %}
+        <tr>
+                <td>{{url.shorten_url}}</td>
+                <td>{{url.url_name}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</form>
+</body>
+</html>
